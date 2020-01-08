@@ -1,0 +1,17 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.md-width {
+    width: 50%;
+}
+
+.sm-width {
+    width: 15%;
+}
+
+.xs-width {
+    width: 5%;
+}
