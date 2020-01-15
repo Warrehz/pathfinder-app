@@ -6,7 +6,9 @@ import {
   MatFormFieldModule,
   MatInputModule,
   MatCardModule,
-  MatGridListModule } from '@angular/material';
+  MatGridListModule,
+  MatRadioModule,
+  MatDividerModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,6 +18,8 @@ import { SignUpButtonComponent } from './buttons/sign-up-button/sign-up-button.c
 import { AbilityScoresComponent } from './pathfinder-2e/ability-scores/ability-scores.component';
 import { AbilityScoreItemComponent } from './pathfinder-2e/ability-score-item/ability-score-item.component';
 import { BasicInfoComponent } from './pathfinder-2e/basic-info/basic-info.component';
+import { ArmorClassComponent } from './pathfinder-2e/armor-class/armor-class.component';
+import { TrainedRadioComponent } from './pathfinder-2e/trained-radio/trained-radio.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,9 @@ import { BasicInfoComponent } from './pathfinder-2e/basic-info/basic-info.compon
     SignUpButtonComponent,
     AbilityScoresComponent,
     AbilityScoreItemComponent,
-    BasicInfoComponent
+    BasicInfoComponent,
+    ArmorClassComponent,
+    TrainedRadioComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +41,9 @@ import { BasicInfoComponent } from './pathfinder-2e/basic-info/basic-info.compon
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatRadioModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,12 +1,14 @@
-<div class="score-container" *ngFor="let score of scores">
+<div class="field" *ngFor="let score of scores">
+
     <mat-form-field class="sm-width" color="accent" appearance="outline">
         <mat-label>{{ score.name }}</mat-label>
         <input [value]="score.score" matInput>
     </mat-form-field>
-</div>
 
-<div class="score-container" *ngFor="let score of scores">
+    <span class="field"></span>
+
     <mat-form-field class="sm-width" color="accent" appearance="outline">
-        <input [value]="findMod(score)" disabled matInput>
+        <input [value]="findMod(score)" matInput>
     </mat-form-field>
+
 </div>
