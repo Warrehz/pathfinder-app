@@ -1,5 +1,5 @@
 <div class="field">
-    <mat-form-field color="accent" appearance="outline">
+    <mat-form-field color="accent" class="sm-width" appearance="outline">
         <mat-label>AC</mat-label>
         <input type="text" matInput>
     </mat-form-field>
@@ -8,7 +8,7 @@
  <span> = 10 </span>
 
  <div class="field">
-    <mat-form-field color="accent" appearance="outline">
+    <mat-form-field color="accent" class="sm-width" appearance="outline">
         <mat-label>Dex</mat-label>
         <input type="text" matInput>
     </mat-form-field>
@@ -17,14 +17,14 @@
  <span> OR </span>
 
  <div class="field">
-    <mat-form-field color="accent" appearance="outline">
+    <mat-form-field color="accent" class="sm-width" appearance="outline">
         <mat-label>Cap</mat-label>
         <input type="text" matInput>
     </mat-form-field>
  </div>
 
  <div class="field">
-    <mat-form-field color="accent" appearance="outline">
+    <mat-form-field color="accent" class="sm-width" appearance="outline">
         <mat-label>Prof</mat-label>
         <input type="text" matInput>
     </mat-form-field>
@@ -33,7 +33,7 @@
  <app-trained-radio></app-trained-radio>
 
  <div class="field">
-    <mat-form-field color="accent" appearance="outline">
+    <mat-form-field color="accent" class="sm-width" appearance="outline">
         <mat-label>Item</mat-label>
         <input type="text" matInput>
     </mat-form-field>
@@ -67,4 +67,18 @@
     </div>
  </div>
 
- <mat-divider  [inset]="true" style="margin-top: 2rem"></mat-divider>
+ <mat-divider  [inset]="true" style="margin-top: 2rem; margin-bottom: 2rem;"></mat-divider>
+
+ <div class="field">
+    <mat-form-field color="accent" class="sm-width" appearance="outline">
+        <mat-label>Shield</mat-label>
+        <input type="text" matInput>
+    </mat-form-field>
+ </div>
+
+ <div class="field">
+    <mat-form-field color="accent" class="md-width" appearance="outline">
+        <mat-label>Hardiness</mat-label>
+        <input type="text" matInput>
+    </mat-form-field>
+ </div>
