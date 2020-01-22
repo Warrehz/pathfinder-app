@@ -1,9 +1,26 @@
-<mat-toolbar color="primary">
-    <span class="material-icons">menu_book</span>
-    <span class="brand">Tome</span>
-    <span class="fill-space"></span>
-    <span class="nav-link">Link</span>
-    <span class="nav-link">Link 2</span>
-    <app-sign-up-button class="nav-link"></app-sign-up-button>
-    <app-login-button class="nav-link"></app-login-button>
+<mat-toolbar color="primary" class="navbar navbar-expand-md">
+
+    <span class="nav-link">Tome</span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <span class="nav-link">Community</span>
+            </li>
+            <li class="nav-item">
+                <span class="nav-link">Support</span>
+            </li>
+            <li class="nav-item">
+                <app-sign-up-button class="nav-link"></app-sign-up-button>
+            </li>
+            <li class="nav-item">
+                <app-login-button class="nav-link"></app-login-button>
+            </li>
+        </ul>
+    </div>
+
 </mat-toolbar>

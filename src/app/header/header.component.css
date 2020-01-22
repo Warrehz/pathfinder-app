@@ -1,11 +1,3 @@
-.brand {
-    padding: 0 1rem;
-}
-
-.fill-space {
-    flex: 1 1 auto;
-}
-.nav-link {
-    padding: 0 1rem;
+.nav-item {
     font-size: small;
 }
