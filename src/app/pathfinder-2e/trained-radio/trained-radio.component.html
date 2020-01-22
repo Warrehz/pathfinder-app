@@ -1,6 +1,7 @@
-<mat-radio-group>
-    <mat-radio-button value="1">T</mat-radio-button>
-    <mat-radio-button value="2">E</mat-radio-button>
-    <mat-radio-button value="3">M</mat-radio-button>
-    <mat-radio-button value="4">L</mat-radio-button>
-</mat-radio-group>  
+<div class="box-holder">
+    <mat-radio-button class="block" *ngFor="let level of levels" [value]="level">
+        <span class="small">
+            {{ level }}
+        </span>
+    </mat-radio-button>
+</div>

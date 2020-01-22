@@ -1,84 +1,152 @@
-<div class="field">
-    <mat-form-field color="accent" class="sm-width" appearance="outline">
-        <mat-label>AC</mat-label>
-        <input type="text" matInput>
-    </mat-form-field>
- </div>
+<div class="row">
 
- <span> = 10 </span>
+    <div class="col-md-12">
 
- <div class="field">
-    <mat-form-field color="accent" class="sm-width" appearance="outline">
-        <mat-label>Dex</mat-label>
-        <input type="text" matInput>
-    </mat-form-field>
- </div>
+        <div class="text-center header">
+            Armor Class
+        </div>
+        
+        <mat-form-field class="ml-2" color="accent" appearance="outline">
+            <mat-label>AC</mat-label>
+             <input matInput>
+        </mat-form-field>
+        
+        <span class="small ml-2">
+            = 10 DC Base
+        </span>
 
- <span> OR </span>
+        <mat-form-field class="ml-2" color="accent" appearance="outline">
+            <mat-label>Dex</mat-label>
+             <input matInput>
+        </mat-form-field>
 
- <div class="field">
-    <mat-form-field color="accent" class="sm-width" appearance="outline">
-        <mat-label>Cap</mat-label>
-        <input type="text" matInput>
-    </mat-form-field>
- </div>
+        <span class="small ml-2">
+            OR
+        </span>
 
- <div class="field">
-    <mat-form-field color="accent" class="sm-width" appearance="outline">
-        <mat-label>Prof</mat-label>
-        <input type="text" matInput>
-    </mat-form-field>
- </div>
+        <mat-form-field class="ml-2" color="accent" appearance="outline">
+            <mat-label>Cap</mat-label>
+             <input matInput>
+        </mat-form-field>
 
- <app-trained-radio></app-trained-radio>
-
- <div class="field">
-    <mat-form-field color="accent" class="sm-width" appearance="outline">
-        <mat-label>Item</mat-label>
-        <input type="text" matInput>
-    </mat-form-field>
- </div>
-
- <div style="display: inline-block; margin-right: 2rem;">
-    <div style="text-align: center; margin-bottom: .75rem; font-weight: 500;">Unarmed</div>
-    <div>
-        <app-trained-radio></app-trained-radio>
+        <mat-form-field class="ml-2" color="accent" appearance="outline">
+            <mat-label>Item</mat-label>
+             <input matInput>
+        </mat-form-field>
+    
     </div>
- </div>
 
- <div style="display: inline-block; margin-right: 2rem; margin-bottom: 2rem;">
-    <div style="text-align: center; margin-bottom: .75rem; font-weight: 500;">Light</div>
-    <div>
-        <app-trained-radio></app-trained-radio>
+</div>
+
+<div class="row">
+    <div style="display: inline-block;">
+        <div class="text-center medium">
+            Unarmored
+        </div>
+        <mat-radio-group [(ngModel)]="unarmored">
+            <app-trained-radio></app-trained-radio>
+        </mat-radio-group>
     </div>
- </div>
 
- <div style="display: inline-block; margin-right: 2rem;">
-    <div style="text-align: center; margin-bottom: .75rem; font-weight: 500;">Medium</div>
-    <div>
-        <app-trained-radio></app-trained-radio>
+    <div style="display: inline-block;">
+        <div class="text-center medium">
+            Light
+        </div>
+        <mat-radio-group [(ngModel)]="light">
+            <app-trained-radio></app-trained-radio>
+        </mat-radio-group>
     </div>
- </div>
 
- <div style="display: inline-block; margin-right: 2rem;">
-    <div style="text-align: center; margin-bottom: .75rem; font-weight: 500;">Heavy</div>
-    <div>
-        <app-trained-radio></app-trained-radio>
+    <div style="display: inline-block;">
+        <div class="text-center medium">
+            Medium
+        </div>
+        <mat-radio-group [(ngModel)]="medium">
+            <app-trained-radio></app-trained-radio>
+        </mat-radio-group>
     </div>
- </div>
 
- <mat-divider  [inset]="true" style="margin-top: 2rem; margin-bottom: 2rem;"></mat-divider>
+    <div style="display: inline-block;">
+        <div class="text-center medium">
+            Heavy
+        </div>
+        <mat-radio-group [(ngModel)]="heavy">
+            <app-trained-radio></app-trained-radio>
+        </mat-radio-group>
+    </div>
+</div>
 
- <div class="field">
-    <mat-form-field color="accent" class="sm-width" appearance="outline">
-        <mat-label>Shield</mat-label>
-        <input type="text" matInput>
-    </mat-form-field>
- </div>
+<mat-divider class="mt-2 mb-2"></mat-divider>
 
- <div class="field">
-    <mat-form-field color="accent" class="md-width" appearance="outline">
-        <mat-label>Hardiness</mat-label>
-        <input type="text" matInput>
-    </mat-form-field>
- </div>
+<div class="row">
+
+    <div class="col-md-12">
+        <div class="text-center header">
+            Saving Throws
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-4">
+
+        <div class="text-center medium">
+            Fortitude
+        </div>
+
+        <div class="text-center">
+            <mat-form-field  class="throw" color="accent" appearance="outline">
+                <input matInput>
+           </mat-form-field>
+        </div>
+
+        <mat-radio-group [(ngModel)]="fortitude">
+            <app-trained-radio></app-trained-radio>
+        </mat-radio-group>
+
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="text-center medium">
+            Reflex
+        </div>
+
+        <div class="text-center">
+            <mat-form-field  class="throw" color="accent" appearance="outline">
+                <input matInput>
+            </mat-form-field>
+        </div>
+
+        <mat-radio-group [(ngModel)]="reflex">
+            <app-trained-radio></app-trained-radio>
+        </mat-radio-group>
+
+        
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="text-center medium">
+            Will
+        </div>
+
+        <div class="text-center">
+            <mat-form-field class="throw" color="accent" appearance="outline">
+                <input matInput>
+            </mat-form-field>
+        </div>
+
+        <mat-radio-group [(ngModel)]="will">
+            <app-trained-radio></app-trained-radio>
+        </mat-radio-group>
+
+    </div>
+
+</div>
+
+
+

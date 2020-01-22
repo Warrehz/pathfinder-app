@@ -1,16 +1,16 @@
-input {
-    text-align: center;
-}
-
-.field {
-    display: inline;
-    margin: 0 0.6rem;
-}
-
-.sm-width {
+mat-form-field {
     width: 4rem;
 }
 
-.md-width {
-    width: 8rem;
+.header {
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.medium {
+    font-size: 0.9rem;
+}
+
+.throw {
+    width: 6rem;
 }

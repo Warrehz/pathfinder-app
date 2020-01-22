@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trained-radio.component.css']
 })
 export class TrainedRadioComponent implements OnInit {
+  
+  training: string;
+  levels: string[] = ['Trained', 'Expert', 'Master', 'Legendary'];
 
   constructor() { }
 

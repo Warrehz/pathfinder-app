@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { 
   MatToolbarModule,
   MatButtonModule,
@@ -8,7 +9,8 @@ import {
   MatCardModule,
   MatGridListModule,
   MatRadioModule,
-  MatDividerModule } from '@angular/material';
+  MatDividerModule,
+  MatCheckboxModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -20,6 +22,8 @@ import { AbilityScoreItemComponent } from './pathfinder-2e/ability-score-item/ab
 import { BasicInfoComponent } from './pathfinder-2e/basic-info/basic-info.component';
 import { ArmorClassComponent } from './pathfinder-2e/armor-class/armor-class.component';
 import { TrainedRadioComponent } from './pathfinder-2e/trained-radio/trained-radio.component';
+import { AbilityArmorComponent } from './pathfinder-2e/ability-armor/ability-armor.component';
+import { HitpointsPerceptionComponent } from './pathfinder-2e/hitpoints-perception/hitpoints-perception.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,9 @@ import { TrainedRadioComponent } from './pathfinder-2e/trained-radio/trained-rad
     AbilityScoreItemComponent,
     BasicInfoComponent,
     ArmorClassComponent,
-    TrainedRadioComponent
+    TrainedRadioComponent,
+    AbilityArmorComponent,
+    HitpointsPerceptionComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +49,9 @@ import { TrainedRadioComponent } from './pathfinder-2e/trained-radio/trained-rad
     MatCardModule,
     MatGridListModule,
     MatRadioModule,
-    MatDividerModule
+    MatDividerModule,
+    MatCheckboxModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,8 @@
-mat-radio-button ~ mat-radio-button {
-    margin-left: 15px;
+.block {
+    display: block;
+}
+
+.box-holder {
+    padding: 1rem 1.5rem;
+    display: inline-block;
 }
