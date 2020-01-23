@@ -1,4 +1,13 @@
 .header {
     margin: 15px 0;
     font-weight: 500;
+    background: #ff4081;
+    color: #ffffff;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sm-width {
+    width: 4rem;
 }

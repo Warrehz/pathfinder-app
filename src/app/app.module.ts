@@ -24,6 +24,8 @@ import { ArmorClassComponent } from './pathfinder-2e/armor-class/armor-class.com
 import { TrainedRadioComponent } from './pathfinder-2e/trained-radio/trained-radio.component';
 import { AbilityArmorComponent } from './pathfinder-2e/ability-armor/ability-armor.component';
 import { HitpointsPerceptionComponent } from './pathfinder-2e/hitpoints-perception/hitpoints-perception.component';
+import { SkillsStrikesComponent } from './pathfinder-2e/skills-strikes/skills-strikes.component';
+import { SkillsItemComponent } from './pathfinder-2e/skills-item/skills-item.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { HitpointsPerceptionComponent } from './pathfinder-2e/hitpoints-percepti
     ArmorClassComponent,
     TrainedRadioComponent,
     AbilityArmorComponent,
-    HitpointsPerceptionComponent
+    HitpointsPerceptionComponent,
+    SkillsStrikesComponent,
+    SkillsItemComponent
   ],
   imports: [
     BrowserModule,

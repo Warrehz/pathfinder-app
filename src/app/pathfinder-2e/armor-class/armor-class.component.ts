@@ -13,6 +13,7 @@ export class ArmorClassComponent implements OnInit {
   fortitude: string;
   reflex: string;
   will: string;
+  perception: string;
 
   constructor() { }
 
